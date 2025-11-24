@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff5f5;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Warning Banner */
+.warning-banner {
+    background-color: #c41e3a;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.warning-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.warning-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.warning-text {
+    flex: 1;
+}
+
+.warning-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.warning-subtitle {
+    font-size: 0.875rem;
+    opacity: 0.95;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    transition: opacity 0.2s;
+}
+
+.close-btn:hover {
+    opacity: 0.8;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 1rem 0;
+}
+
+.breadcrumb p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Main Content */
+.main-content {
+    padding: 3rem 0;
+}
+
+.offer-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.main-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secondary-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.no-risk-text {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #c41e3a;
+    margin: 1.5rem 0;
+}
+
+/* Price Card */
+.price-card {
+    background: white;
+    border: 3px solid #c41e3a;
+    border-radius: 0.75rem;
+    padding: 2.5rem 2rem;
+    margin: 2.5rem auto;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.price-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.5));
+}
+
+.old-price {
+    font-size: 2rem;
+    color: #999;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.new-price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #c41e3a;
+}
+
+.price-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+/* Price Inline */
+.price-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.price-inline .old-price {
+    font-size: 1.5rem;
+}
+
+.price-inline .new-price {
+    font-size: 3rem;
+}
+
+.price-text {
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto 0;
+}
+
+.btn {
+    padding: 1.25rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #c41e3a;
+    color: white;
+    box-shadow: 0 10px 25px rgba(196, 30, 58, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #a01830;
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(196, 30, 58, 0.4);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #666;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn-secondary:hover {
+    color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Divider */
+.divider {
+    border-top: 2px solid #e5e5e5;
+    margin: 3rem auto;
+    max-width: 800px;
+}
+
+/* Footer */
+.footer {
+    background-color: transparent;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer p {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.75rem;
+    }
+
+    .secondary-title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.125rem;
+    }
+
+    .no-risk-text {
+        font-size: 1.25rem;
+    }
+
+    .price-card {
+        padding: 2rem 1rem;
+    }
+
+    .price-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .old-price {
+        font-size: 2rem;
+    }
+
+    .new-price {
+        font-size: 3rem;
+    }
+
+    .price-description {
+        font-size: 1.125rem;
+    }
+
+    .price-inline {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .price-inline .old-price {
+        font-size: 1.5rem;
+    }
+
+    .price-inline .new-price {
+        font-size: 2.5rem;
+    }
+
+    .price-text {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .warning-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .secondary-title {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.offer-section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.price-card {
+    animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+/* Hidden state */
+.hidden {
+    display: none !important;
+}

@@ -1,0 +1,354 @@
+/* ===============================
+   RESET
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* ===============================
+   GLOBAL
+================================= */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.05rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* ===============================
+   URGENCY BAR
+================================= */
+
+.urgency-bar {
+    background: linear-gradient(90deg, #8b0000, #ff1a1a);
+    color: #fff;
+    text-align: center;
+    padding: 12px 15px;
+    font-weight: 700;
+    box-shadow: 0 0 20px #ff1a1a;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.hero {
+    background: radial-gradient(circle at center, #400000 0%, #000 70%);
+    padding: 60px 20px 50px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-shadow: 0 0 25px #ff1a1a;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    margin-top: 5px;
+    color: #ccc;
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+}
+
+.checkout-breadcrumb {
+    font-size: 0.95rem;
+    color: #999;
+    margin-top: 20px;
+}
+
+.checkout-breadcrumb span {
+    color: #fff;
+}
+
+/* ===============================
+   CONTENT SECTION
+================================= */
+
+.content-section {
+    background: #000;
+    padding: 50px 20px 40px;
+}
+
+.content-section .container {
+    max-width: 800px;
+}
+
+.main-headline {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff1a1a;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.content-text p {
+    color: #ddd;
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* ===============================
+   OFFER SECTION
+================================= */
+
+.offer-section {
+    background: radial-gradient(circle at center, #300000, #000);
+    padding: 50px 20px;
+}
+
+.offer-card {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 40px 30px;
+    border: 2px solid #ff1a1a;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+    text-align: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.5));
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 8px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.new-price {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ff1a1a;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.cta-button {
+    background: linear-gradient(90deg, #ff1a1a, #8b0000);
+    padding: 18px 24px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    margin-bottom: 15px;
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 45px #ff1a1a;
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+.decline-button {
+    background: transparent;
+    border: 1px solid #666;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #999;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.decline-button:hover {
+    border-color: #888;
+    color: #ccc;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ===============================
+   BENEFITS SECTION
+================================= */
+
+.benefits-section {
+    background: #050505;
+    padding: 60px 20px;
+}
+
+.benefits-section .container {
+    max-width: 850px;
+}
+
+.benefits-text p {
+    color: #ddd;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.emphasis {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.25rem !important;
+}
+
+.highlight-text {
+    background: linear-gradient(90deg, #ff1a1a, #8b0000);
+    padding: 20px 18px;
+    border-radius: 12px;
+    font-size: 1.3rem !important;
+    font-weight: 700;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+    margin: 30px 0 !important;
+}
+
+.time-emphasis {
+    font-weight: 700;
+    color: #ff1a1a;
+    font-size: 1.2rem !important;
+}
+
+.guarantee {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.15rem !important;
+    margin-top: 25px !important;
+}
+
+/* ===============================
+   FINAL OFFER SECTION
+================================= */
+
+.final-offer-section {
+    background: radial-gradient(circle at center, #400000, #000);
+    padding: 60px 20px 70px;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+.footer {
+    background: #000;
+    color: #777;
+    padding: 35px 20px 30px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer .disclaimer {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===============================
+   RESPONSIVO
+================================= */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .main-headline {
+        font-size: 1.5rem;
+    }
+
+    .content-text p,
+    .benefits-text p {
+        font-size: 1rem;
+    }
+
+    .new-price {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 16px 20px;
+    }
+
+    .offer-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .urgency-bar {
+        font-size: 0.85rem;
+        padding: 10px 8px;
+    }
+
+    .main-headline {
+        font-size: 1.3rem;
+    }
+
+    .highlight-text {
+        font-size: 1.1rem !important;
+        padding: 16px 14px;
+    }
+}

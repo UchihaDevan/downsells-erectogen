@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spezialangebot - Nicht verpassen!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Warning Banner -->
+    <div id="warningBanner" class="warning-banner">
+        <div class="warning-content">
+            <div class="warning-icon">⚠️</div>
+            <div class="warning-text">
+                <p class="warning-title">Bitte warten! Ihre Bestellung wurde noch nicht abgeschlossen!</p>
+                <p class="warning-subtitle">Schließen Sie diese Seite nicht, sonst kann es zu doppelten Abbuchungen auf Ihrer Karte kommen.</p>
+            </div>
+            <button id="closeWarning" class="close-btn" aria-label="Schließen">✕</button>
+        </div>
+    </div>
+
+    <!-- Navigation Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <p>Checkout → Angebote → Meine Bestellung</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- First Section -->
+            <section class="offer-section">
+                <h1 class="main-title">
+                    Es ist wirklich schade zu wissen, dass Sie ein so unglaubliches Angebot abgelehnt haben.
+                </h1>
+                
+                <p class="subtitle">
+                    Deshalb werde ich Ihnen einen noch größeren Rabatt anbieten, damit Sie die vollständige Behandlung erhalten und nie wieder versagen.
+                </p>
+
+                <!-- Price Card -->
+                <div class="price-card">
+                    <div class="img-container">
+                    <img src="../images/erectogen-3p.png" alt="">
+                </div>
+                    <div class="price-content">
+                        <span class="old-price">35 €</span>
+                        <span class="new-price">25 €</span>
+                    </div>
+                    <p class="price-description">für die vollständige Behandlung</p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="button-group">
+                    <button id="acceptBtn1" class="btn btn-primary">
+                        Ja, ich möchte die vollständige Behandlung
+                    </button>
+                    
+                    <button id="declineBtn1" class="btn btn-secondary">
+                        Nein, danke
+                    </button>
+                </div>
+            </section>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Second Section - Reinforcement -->
+            <section class="offer-section">
+                <h2 class="secondary-title">
+                    Ich möchte wirklich nicht, dass Sie Ihre erektile Dysfunktion heilen, Ihre Partnerin so sehr beeindrucken, dass sie die Bettlaken durchnässt, und dann wieder versagen.
+                </h2>
+                
+                <p class="subtitle">
+                    Die Chance, für immer von erektiler Dysfunktion geheilt zu werden, liegt direkt vor Ihnen.
+                </p>
+
+                <p class="no-risk-text">
+                    Es gibt keinerlei Risiken.
+                </p>
+                <div class="price-card">
+                    <div class="img-container">
+                    <img src="../images/erectogen-3p.png" alt="">
+                </div>
+                <!-- Price Display -->
+                <div class="price-inline">
+                    <span class="old-price">35 €</span>
+                    <span class="new-price">25 €</span>
+                    <span class="price-text">für die vollständige Behandlung</span>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="button-group">
+                    <button id="acceptBtn2" class="btn btn-primary">
+                        Ja, ich möchte die vollständige Behandlung
+                    </button>
+                    
+                    <button id="declineBtn2" class="btn btn-secondary">
+                        Nein, danke
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
